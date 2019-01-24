@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TOKOK</title>
+		<link href="/emailSub/static/css/font.css" rel="stylesheet">
+		<link href="/emailSub/static/css/style.css" rel="stylesheet">
+		<link href="/emailSub/static/css/video-js.css" rel="stylesheet">
+		<link href="/emailSub/static/css/index.css" rel="stylesheet">
+		<style>
+			.header {
+				background: none;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			#abouts .lang{
+				margin-left: 25px;
+				position: relative;
+				cursor: pointer;
+			}
+			.cont_aboutUs{
+				position: relative;
+			}
+			.cont_aboutUsTop {
+				background: #fff none no-repeat center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				width: 100%;
+				height: 473px;
+				display: block;
+				background-image: url(/emailSub/static/img/about_banner.png);
+			}
+			.list_lang .language{
+				margin-top: 0px;
+			}
+			
+			.cont_aboutUsAdvantage {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.aboutUsAdvantage{
+				position: relative;
+				background: #fff;
+			}
+
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont {
+				padding: 90px 10px;
+				height: 180px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont .cont_aboutUsAdvantageTitle {
+				height: 68px;
+				line-height: 68px;
+				color: #00006c;
+				font-size: 24px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul {}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li {
+				float: left;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li.one {
+				width: 177px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li.two {
+				width: 220px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li.three {
+				width: 190px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li.four {
+				width: 250px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li.five {
+				width: 266px;
+			}
+			
+			.cont_aboutUsAdvantage .cont_aboutUsAdvantageCont ul li p {
+				font-size: 14px;
+				color: #00006c;
+				height: 30px;
+				line-height: 30px;
+			}
+			.aboutCallMe{
+				background: #10242B;
+				
+			}
+			.cont_aboutCallMe{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.cont_aboutCallMe .cont_aboutCallMeCont{
+				padding: 25px 30px;
+				height: 120px;
+			}
+			.cont_aboutCallMe .cont_aboutCallMeCont .cont_aboutCallMeTitle{
+				font-size:24px;
+				color: #fff;
+				font-weight: bold;
+				height: 50px;
+				line-height: 50px;
+			}
+			.cont_aboutCallMe .cont_aboutCallMeCont ul{}
+			.cont_aboutCallMe .cont_aboutCallMeCont ul li{
+				float: left;
+			}
+			.cont_aboutCallMe .cont_aboutCallMeCont ul li.one{width: 320px;}
+			.cont_aboutCallMe .cont_aboutCallMeCont ul li.two{width: 165px;}
+			.cont_aboutCallMe .cont_aboutCallMeCont ul li.three{width: 170px;}
+			.cont_aboutCallMe .cont_aboutCallMeCont ul li.three{width: 250px;}
+			
+			.cont_aboutCallMe .cont_aboutCallMeCont ul li p{
+				font-size: 14px;
+				color: #fff;
+				line-height: 30px;
+			}
+			.hr_back{
+				background: #7d888c;
+				height: 6px;
+				width: 100%;
+			}
+			/*.about_foot{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.about_foot .about_footLeft{
+				width: 600px;
+				float: left;
+			}
+			.about_foot  .about_footCont{
+				padding: 40px 40px 30px 30px;
+			}
+			.about_foot .about_footLeft span{
+				float: left;
+				line-height: 30px;
+				color: #ccc;
+				font-size: 12px;
+				width: 85px;
+			}
+			.about_foot .about_footLeft p{
+				font-size: 10px;
+				color: #cccccc;
+				height: 28px;
+				line-height: 28px;
+			}
+			.about_footRig{
+				width: 250px;
+				float: left;
+				padding-left: 15px;
+			}
+			.about_footRig .about_footImg{
+				width: 64px;
+				height: 100%;
+				float: left;
+				margin-right: 15px;
+			}
+			.about_footRig .about_footImg img{
+				width: 64px;
+				height: 64px;
+			}
+			.about_footRig .about_footImg p{
+				height: 28px;
+				font-size: 12px;
+				text-align: center;
+				color: #cccccc;
+				line-height: 28px;
+			}
+			.about_footRisk{
+				width: 290px;
+				float: left;
+			}
+			.about_footRisk .about_footRiskTitle{
+				height: 18px;
+				line-height: 18px;
+				color: #cccccc;
+			}
+			.about_footRisk p{
+				font-size: 10px;
+				color: #999;
+				font-size: 10px;
+			}*/
+			.about_mePostion{
+				position: absolute;
+				width: 445px;
+				padding: 15px 30px 20px 40px;
+				background: #72f375;
+				top: -160px;
+				right: 80px;
+			}
+			@media screen and (min-width: 1280px) {
+			    .about_mePostion {
+			        right: 120px;
+			    }
+			}
+			@media screen and (min-width: 1600px) {
+			    .about_mePostion {
+			        right: 220px;
+			    }
+			}
+			@media screen and (min-width: 1800px) {
+			    .about_mePostion {
+			        right: 280px;
+			    }
+			}
+			@media screen and (min-width: 2300px) {
+			    .about_mePostion {
+			        right: 450px;
+			    }
+			}
+			@media screen and (min-width: 2560px) {
+			    .about_mePostion {
+			        right: 700px;
+			    }
+			}
+			@media screen and (min-width: 3500px) {
+			    .about_mePostion {
+			        right: 1000px;
+			    }
+			}
+			.about_mePostion .about_mePostionTitke{
+				color: #10242b;
+				font-size: 24px;
+				line-height: 42px;
+				margin-top: 8px;
+			}
+			.about_mePostion p{
+				margin-bottom: 8px;
+				line-height: 24px;
+				color: #10242B;
+				font-size: 14px;
+			}			
+			.service_agreement .service_agreementTitle{
+				line-height: 96px;
+				padding: 0 20px;
+				font-size: 24px;
+				color: #10242B;
+				border-bottom: 1px solid #CCC;
+			}
+			.service_agreement  .classATitle{
+				line-height: 36px;
+				color: #10242B;
+				margin-top: 10px;
+				font-size: 18px;
+			}
+			.service_agreement  .classBTitle{
+				font-size: 12px;
+				color: #10242B;
+				line-height: 30px;
+				margin-top: 10px;
+			}
+			.service_agreement  p{
+				line-height: 22px;
+				font-size: 12px;
+				color: #666;
+			}
+			.service_agreementCont{
+				overflow-y: scroll;
+				padding: 20px;
+			}
+			.classCTitle{
+				line-height: 33px;
+				font-size: 18px;
+				color: #10242B;
+				margin-top: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="langEnglish langs">
+		<div class="block">
+		<div class="service_agreement ">
+			<div class="service_agreementTitle">Terms of Service
+				<p class="aboutClose">
+					<i onclick="closeCont('langEnglish')" class="iconfont"></i>
+				</p>
+			</div>	
+			<div class="service_agreementCont">
+				<div class="classATitle">Policy of Privacy Rights</div>
+				<div class="classBTitle">1 Range of Privacy</div>
+				<p>1.1 Personal registration information provided at the request of the Site when the user registers an account of the Site or an account for payment, including but not limited to the information of identity card;</p>
+				<p>1.2 Server data on The user’s browser automatically received and recorded by the Site when The user uses the service of the Site or accesses to the Site, including but not limited to the IP address and the web page record demanded by The user;</p>
+				<p>1.3 Relevant data collected by the Site when user trades on the Site, including but not limited to the record of offering price, purchase, etc.;</p>
+				<p>1.4 Other users’ personal information legally acquired by the Site.</p>
+				<div class="classBTitle">2 Use of Information</div>
+				<p>2.1 Unless given with the user’s consent in advance, the Site will not sell or lend any user’s personal information to anyone. Neither will the Site allow any third party to collect, edit, sell, or spread for free the user’s personal information.</p>
+				<p>2.2 All user’s identity data and transactions information will be kept confidential by the Site and will not be disclosed to any organizations or persons, unless the law stipulates otherwise.</p>
+				<div class="classATitle">Applying Range</div>
+				<p>1.Thank you for choosing Tokok.com (“the Site”). The following terms and conditions of service (these “Terms of Service”) apply to all customers of the Site. You should read these Terms of Service carefully. By clicking the “I agree” or “Agree” button, registering and using any of the services, functions, or features offered from time to time on the Site (collectively or individually, the “Services”), the customer (referred to herein as “you”, “your” or “user”) agrees with these Terms of Service.</p>
+				<p>2.All the users should read the Terms of service carefully as well as the statements and rules of operation published by the Site. By clicking the registration button, the users are deemed to have read, understood and accepted all the terms of the documents abovementioned, and willing to be bound by the above documents. All the rules, statements and declaration are integral parts of this Terms of services, which shall have the same legal effect with it.</p>
+				<p>3.The legal relationship formed between the users and the disputes arising from the transactions of crypto-currencies between the users are irrelevant to the Site and the Terms of service.</p>
+				<div class="classATitle">1、Definition</div>
+				<p>1.1 Crypto-currencies：refers to block chain-based data flow, or other similar digital representations of rights or assets (including but not limited to bitcoins, Litecoins, etc.).</p>
+				<p>1.2 Tokok.com：refers to the trading platform operated and managed by Kindly Keep Network Technology Limited. The website address is www.Tokok.com. Kindly Keep Network Technology Limited provides the online platform for the customers to trade the crypto-currencies. In the Terms of service, the Site refers to the trading platform as well as Kindly Keep Network Technology Limited.</p>
+				<p>1.3 The user：refers to the registered customer who agrees with the Terms of service, as well as the law and the regulations published and updated from time to time on the Site.</p>
+				<p>1.4 User Registration：means the user logins the Site, files the relevant information according to the requirements and agrees to perform the Terms of service.</p>
+				<p>1.5 Transactions of crypto-currencies：means the users’ transactions of the crypto-currencies on the Site.</p>
+				<p>1.6 Top up amounts：the money/the Crypto-currencies the user deposits into the Site to purchase or sell the Crypto-currencies.</p>
+				<p>1.7 Fee：refers to the fees the user pays to the Site whenever the transaction has been completed on the Site.</p>
+				<div class="classATitle">2、User Registration</div>
+				<div class="classBTitle">2.1 Eligibility</div>
+				<p>The user commits: The user of the Site has full capacity for civil conduct. Or not having full capacity, whenever the user clicks the “I agree” or “Agree” button and pass the authentication process, the user is deemed to be eligible, registering and using the services on the Site by statutory guardians or other legal representatives.</p>
+				<div class="classBTitle">2.2 Purpose of Registration</div>
+				<p>The user commits: By registering and using the services on the Site, the user will not or is not for violating the law or disordering the Crypto-currencies transaction system.</p>
+				<div class="classBTitle">2.3 Procedure of Registration</div>
+				<p>2.3.1 Once The user logins the Site with email account directly and clicks the agree button to confirm the agreement of the terms of services, it will be deemed to register successfully.</p>
+				<p>2.3.2 The accurate Identity Card Number is required to pass the authentication process, after which the user can process the transactions of Crypto-currencies.</p>
+				<div class="classATitle">3、Service for User</div>
+				<div class="classBTitle">The Site provides the online platform for the user to commit the transactions of Crypto-currencies. The Site will not be a participant as purchaser or seller in any transactions.</div>
+				<div class="classBTitle">3.1 Contents of Services</div>
+				<p>3.1.1 The user has the right to view the real-time quotes of the Crypto-currencies and the information of transactions and proceed the transactions of Crypto-currencies by submitting the orders to the Site.</p>
+				<p>3.1.2 The user has the right to view the information of its account of the Site, and proceed relevant operations provided by the Site.</p>
+				<p>3.1.3 The user has the right to participate in the activities organized by the Site according to the rules published by the Site.</p>
+				<p>3.1.4 Other services the Site promises to provide.</p>
+				<div class="classBTitle">3.2 The Service Rules</div>
+				<div class="classBTitle">The user needs to promise to comply with the following the Site service rules:</div>
+				<p>3.2.1 To ensure the legitimacy of the source of all funds and Crypto-currencies in the account, the user shall abide by the provisions of the laws, regulations and normative documents and the requirements of policy, and shall not be permitted to work or use the Site service in illegal activities or other activities that damage the Site or the rights and interests of third party and the public interests in the Site, such as sending or receiving any material that is illegal, against the good faith and infringes others' rights and interests, sending or receiving material of Pyramid Scheme or other harmful information or comments, using or faking the email headlines of the Site without authorization, etc.</p>
+				<p>3.2.2 The user shall abide by the laws and regulations to properly use and keep the "Site" accounts and passwords, funding passwords secretly, and ensure the security of the binding mobile when registering and the verification codes received. The user is fully responsible for the consequences arisen by any operation of the account of the "Site" and passwords, funding passwords or the mobile phone verification codes. Whenever the user is aware of the unauthorized using of the "Site" accounts, passwords, or funding passwords or the verification codes by any third party, or other account security problems, users shall promptly and effectively notify the "Site" to suspend the account service. The "Site" is entitled to take actions within a reasonable time according to the requests. But the "Site" shall not be responsible to the damages before. The user is not entitled to donate, lend, lease, transfer or otherwise dispose the Site accounts to others without the written consent of the Site.</p>
+				<p>3.2.3 The user shall comply with this user agreement and other Terms of service and regulations published and updated by the Site from time to time.</p>
+				<div class="classATitle">4、Rules of Crypto-currencies transactions</div>
+				<div class="classBTitle">The user needs to promise to comply with the following trading rules of the Site in the process of the Crypto-currencies trading with other users when entering into the Site.</div>
+				<div class="classBTitle">4.1 Browsing trading information</div>
+				<p>When browsing the Crypto-currencies trading information in the Site, the user shall read all the content contained in the transactions carefully, including but not limited to the price, the amount of commission, the fees and the direction of purchasing or selling the Crypto-currencies. The user shall click the button to trade only when he/she accepts all the contents contained in transactions.</p>
+				<div class="classBTitle">4.2 Submitting commission</div>
+				<p>After browsing and confirming the trading information, the user can submit the trading commission, after which the user is deemed to authorize the Site to matching the deals automatically. The transaction will be matched directly when there are satisfactory transactions with the commissioned price without informing the user in advance.</p>
+				<div class="classBTitle">4.3 Transaction details checking</div>
+				<p>The user can check the corresponding records and details of the transactions in management center to confirm the transactions.</p>
+				<div class="classBTitle">4.4 Withdraw/modify commission</div>
+				<p>Before the transaction is completed, the user has the right to withdraw or modify the commission.</p>
+				<div class="classATitle">5、The User's Rights and Obligations</div>
+				<p>5.1 The user has the right to accept the service of the Site provided by the Site according to this Terms of service.</p>
+				<p>5.2 The user has the right to terminate the use of the service of the Site at any time.</p>
+				<p>5.3 The user has the right to withdraw balance in the Site at any time, including the RMB and the Crypto-currencies, but needs to pay corresponding withdrawal fee to the Site.</p>
+				<p>5.4 The user is responsible for the authenticity, validity and security of its personal data provided for the registration.</p>
+				<p>5.5 The user shall not maliciously interfere with the normal transactions and disturb the Crypto-currencies trading order when processing the transactions of Crypto-currencies in the Site.</p>
+				<p>5.6 The user shall not interfere with the normal operation of the Site or interfere with other users’ using the Site service by any technical methods or in other ways.</p>
+				<p>5.7 The user shall not request the Site to provide relevant material beyond judicial or administrative ways, in the event of its litigations with other users yielded due to online transactions.</p>
+				<p>5.8 The user shall not maliciously defame the Site’ goodwill with fictional facts.</p>
+				<p>5.9 The user shall have the duty and responsibility to safely keep its own accounts and passwords and shall bear its own loss for the leakage of accounts and passwords due to its own cause.</p>
+				<div class="classATitle">6、Rights and Obligations of the Site</div>
+				<p>6.1 The Site shall have the right to refuse the user’s registration and shall have the right to cancel its member ID in the event that such user does not have the qualification stipulated by the agreement for registration, shall have the right to claim for damages for the loss suffered by the Site towards the users or their legal representatives. At the same time, the Site preserves the right to determine whether to accept the users’ registration at any other circumstances.</p>
+				<p>6.2 The Site shall have the right to suspend or terminate the use of the account once having discovered that the actual user is not the initial registered one.</p>
+				<p>6.3 The Site shall have the right to notify the user to correct and update information or ask for proof, or suspend, terminate the service with the Site, if it is reasonably doubted that the information provided by the user is wrong, inaccurate, invalid or incomplete through the way of detecting technology, artificial sampling, etc.</p>
+				<p>6.4 The Site shall have the right to correct information if there is any wrong information shown on the Site.</p>
+				<p>6.5 The Site shall keep the right to modify, suspend or terminate the services of the Site at any time, and shall have the right to modify or suspend the services without notifying users in advance, and the termination shall take effect upon the date of termination notice posted on the website if the Site terminates one or more its service.</p>
+				<p>6.6 The Site shall take necessary technical means and management measures to guarantee its normal operation, provide necessary and reliable transaction environment and transaction services and maintain the order of the transactions of Crypto-currencies. The user agrees that organizations such as the Site, the third party, associated bank, etc. instantly take all effective measures without users’ specific authorization to correct the trade mistakes, including the query of the transaction records of the user’s capital account or other information and the transfer of money.</p>
+				<p>6.7 The Site shall have the right to cancel the user’s account if the user has not logged in its account for a year in a row. After the cancellation of the account, the Site shall have the right to let other registered users use the corresponding member ID.</p>
+				<p>6.8 The Site shall have the right to keep the user’s registration information and all the trading information during the Site services during the performance of this agreement and after termination of this agreement but shall not illegally use this information.</p>
+				<p>6.9 The Site shall have the right to delete all kinds of information on the Site that is against national laws, regulations, and normative documents or the users’ evaluation on the Site and exercise this right without notifying the user or acquiring the users’ consent.</p>
+				<div class="classATitle">7、Special Statement</div>
+				<p>Within the scope of the law, whatever the circumstance is, the Site shall not assume liability for the following reasons: the maintenance of information network equipment, failure of network connection, computer, communications, other system and power, or strikes, labor disputes, revolts, insurrection, riots, insufficient productivity or productive resources, fire, flood, storm, explosion, war, government behavior, the order of judicial administrative authorities, force majeure, the conduct of the third party, or the inability or the delaying of service which the current technology of the Site cannot prevent, and the loss suffered by the user from the circumstances abovementioned.</p>
+				<div class="classATitle">8、Intellectual property rights</div>
+				<p>8.1 All the intellectual property rights contained in the Site, including but not limited to site marks, database, website design, text and graphics, software, photos, videos, music, sound and their combinations, intellectual property rights of software compilation, relevant source code and software (including applications and scripts) shall belong to the Site. The user shall not duplicate, change, copy, send or use any material or the content of the foresaid rights for commercial purposes.</p>
+				<p>8.2 All the rights (including but not limited to reputation, trademarks and logos) contained in the name of the Site belong to the Kindly Keep Network Technology Limited.</p>
+				<p>8.3 The acceptance of this agreement shall be deemed to transfer all the following copyrights (published in any form of information on the Site by the user) exclusively and gratuitously to the Site, including but not limited to copy rights, distribution rights, rights of rental, exhibition, perform, broadcasting, network transmission, filming, and rights of adaptation, translation, rights of assembly and other rights entitled by the copyright owner. The Site is entitled to bring infringement lawsuit and get full compensation towards any infringers. whether the content is formed before or after agreement is signed.</p>
+				<p>8.4 Users shall not use or dispose the intellectual property rights of the Site illegally. The user shall not publish or authorize other websites (and media) to use the information published on the Site in any way.</p>
+				<div class="classATitle">9、Customer service</div>
+				<p>The Site shall establish the professional customer service team and customer service system to ensure the channels for use’s questions and complaints with timely answer and complaint feedback in aspects of technology, crew and system.</p>
+				<div class="classATitle">10、Change and termination of agreement</div>
+				<p>10.1 Change of the agreement: The Site has the right to change the content of the Terms of service or other terms of service and rules of operations published by the Site at any time which will be issued prominently on the website. The change is valid since the day the statement issued. If the user continues to use the service provided by the Site, it shall be deemed to agree with the change. Otherwise the user shall have the right to cancel the account and stop using the service.</p>
+				<div class="classBTitle">10.2 Termination of the agreement</div>
+				<p>10.2.1 The Site shall have the right to cancel the account of the Site according to the agreement. The agreement shall be terminated on the date of the cancellation of this account.</p>
+				<p>10.2.2 The Site shall have the right to terminate all the service on according this agreement. The agreement shall be terminated on the date of all service.</p>
+				<p>10.2.3 After the termination of this agreement, the user shall have no right to require the Site to provide any service or to fulfill any other obligation, including but not limited to require the Site to retain or to disclose any information of the original account to the users, to forward the unread or unsent message to the user or any third party.</p>
+				<p>10.2.4 The termination of this agreement shall not affect liability of the default party for breaching the agreements.</p>
+				<div class="classATitle">11、Anti-Money Laundering</div>
+				<p>11.1 The Site will obey and implement the provisions of the AML, executing the authentication system and saving the users’ identity data and transactions information, as well as the system of reporting high-value and suspicious transactions.</p>
+				<p>11.2 A copy of identity card should be provided and uploaded when the user registers an account and reports the loss of password for transaction or password for money. The Site will identify the information of identity card provided by the user. The Site has the right to reject registration or erase the accounts registered in the event that the Site has the reasonable doubts that user registers with a false identity.</p>
+				<p>11.3 By reference to the Measures for the Administration of Financial Institutions' Reporting of High-Value Transactions and Suspicious Transactions, the Site saves the record of high-value transactions and the record of money-laundering-suspected transactions and provides the record of high-value transactions </p>
+				<p>11.4 The Site saves the user’s identity information and the record of high-value transactions and suspicious transactions, assists and cooperates with the judicial authorities and the administrative authorities in accordance with the law, and, pursuant to the provisions of the law, assists the judicial authorities, customs, tax department and other authorities in inquiring, freezing and deducting the user’s deposit.</p>
+				<div class="classATitle">12、Notice of Risk</div>
+				<div class="classBTitle">12.1 There exits high risks in the transactions of Crypto-currencies.</div>
+				<p>12.1.1 The market of Crypto-currencies is brand new and unacknowledged, and possibly not to increase or decline. At present, Crypto-currencies are mostly and heavily used by speculators, but relatively less used in the sector of retail and commerce. The price of Crypto-currencies is thus easy to fluctuate, and then yields adverse impact towards the investment of Crypto-currencies.</p>
+				<p>12.1.2 There is no restriction as the price limits mechanism of stock market in the market of Crypto-currencies, while the transaction of Crypto-currencies is open for 24 hours. Due to the relatively low amount of Crypto-currencies, the price will be easily controlled by bankers, with a possibility that it might increase several times within a day, and also a possibility that it might decrease half the original price within a day.</p>
+				<p>12.2 The user should self-control the risks, assess the investment value and risks of Crypto-currencies, and bear the financial risk of losing all the investment when participating in the tractions of Crypto-currencies.</p>
+				<p>12.3 In the event that the enactment or revision of the law, regulations and normative documents renders the suspension or the prohibition of the transactions of Crypto-currencies. The user should bear all the financial loss itself.</p>
+				<div class="classATitle">13、Liability of Breach</div>
+				<p>13.1 The Site or The user breaching the terms of this Contract constitutes breach of contract. The breaching party should assume liability towards the other party who honors the contract.</p>
+				<p>13.2 In the event that The Site suffers loss due to the untrue, incomplete or inaccurate information provided by the user, the user undertakes to indemnify any loss suffered by The Site.</p>
+				<p>13.3 In the event that the user violates the law or breaches the terms hereof, engaging in illegal activities on the Site or exploiting the service of the Site to engage in illegal activities, the Site is entitled to immediately terminate the service offered to the user, erase the user’s account and claim for damages towards the user.</p>
+				<p>13.4 In the event that the user intrudes the operation of The Site with technical methods or intrudes other users using the Site, the Site is entitled to immediately erase the user’s account and claim for damages towards the user.</p>
+				<p>13.5 In the event that the user maliciously defames the goodwill of the Site with methods such as falsified truth, the user should make a public apology and indemnify the damage suffered by the Site. The Site is also entitled to terminate the service offered to the user.</p>
+				<div class="classATitle">14、Dispute Resolution</div>
+				<p>Any dispute arising from or in connection with this Contract shall be resolved through amicable negotiation. Should the negotiation fail to resolve the dispute, the dispute shall be submitted to Arbitration Commission for arbitration and shall be heard in accordance with the Arbitration Rules of Arbitration Commission.</p>
+				<div class="classATitle">15、Execution and Interpretation</div>
+				<p>15.1 This Contract shall be taken into effect when the user clicks accept and completes the procedure of registration, and then becomes legally binding between The Site and the user.</p>
+				<p>15.2 The Site is entitled to the ultimate interpretation of this Contract.</p>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="langChina langs">
+		<div class="block">
+				<div class="service_agreement ">
+			<div class="service_agreementTitle">Tokok.com使用者协议
+				<p class="aboutClose">
+					<i onclick="closeCont('langChina')" class="iconfont"></i>
+				</p>
+			</div>	
+			<div class="service_agreementCont">
+				<div class="classATitle">隐私权政策</div>
+				<div class="classBTitle">1 适用范围</div>
+				<p>1.在用户注册tokok.com账号或者支付账户时，使用者要根据tokok.com要求提供个人注册信息；</p>
+				<p>2.在使用者使用tokok.com服务时，或访问tokok.com网页时，tokok.com自动接收并记录的用户浏览器上的服务器数值，包括但不限于IP地址等数据及用户要求取用的网页记录；</p>
+				<p>3.tokok.com收集到的用户在T网进行交易的有关数据，包括但不限于出价、购买等记录；</p>
+				<p>4.tokok.com通过合法途径取得的其他用户个人信息。</p>
+				<div class="classBTitle">2 信息使用</div>
+				<p>1.tokok.com不会向任何人出售或出借用户的个人信息，除非事先得到用户的许可。</p>
+				<p>2.tokok.com也不允许任何第三方以任何手段收集、编辑、出售或者无偿传播用户的个人信息。</p>
+				<p>3.tokok.com对所获得的客户身份数据和交易信息进行保密，不得向任何单位和个人提供客户身份数据和交易信息，法律法规另有规定的除外。</p>
+				<div class="classATitle">协议内容及签署</div>
+				<p>1. 使用者点击tokok.com注册页面的同意按钮，视为用户与tokok.com已达成 《tokok.com使用者协议》（下称“本协议”），就使用者进入Tokok.com使用tokok.com相应的交易服务时即达成本协议的全部约定。</p>
+				<p>2. tokok.com及用户均已认真阅读本《tokok.com使用者协议》中全部条款及tokok.com已发布的法律声明和操作规则的全部内容，对上述文档均已知晓、理解并接受，同意将其作为确定双方权利义务的依据。tokok.com《法律声明》为本协议的必要组成部分，用户接受本协议的同时即视为接受tokok.com《法律声明》的全部内容。本协议内容包括本协议正文以及tokok.com已经发布的或将来可能发布的各类规则、声明、说明。所有的规则、声明、说明为协议不可分割的一部分，与协议正文具有同等法律效力。</p>
+				<p>3. 本协议不涉及tokok.com用户与其他用户之间因虚拟币交易而产生的法律关系及法律纠纷。</p>
+				<div class="classATitle">一、定义条款</div>
+				<p>1.1 “虚拟币”：指高科技中代替实体货币流通的信息流或数据流（包括但不局限于BTC、LTC等)。</p>
+				<p>1.2 “tokok.com”：指Kindly Keep Network Technology Limited运营和管理的虚拟币交易平台，域名为www.tokok.com, Kindly Keep Network Technology Limited通过该网络交易平台为虚拟币玩家提供进行虚拟币的网络交易平台服务。本协定下文中，“tokok.com”既指网络交易平台（www.tokok.com），亦指Kindly Keep Network Technology Limited。</p>
+				<p>1.3 “用户”：接受并同意本协议全部内容及tokok.com不时发布和更新的法律条款和操作规则、通过tokok.com进行虚拟币交易的tokok.com注册会员。</p>
+				<p>1.4 “用户注册”：用户注册是指用户登录tokok.com，并按要求填写相关信息并确认同意履行相关用户协议的过程。</p>
+				<p>1.5 “虚拟币交易”：使用者通过tokok.com进行的虚拟币交易活动。</p>
+				<p>1.6 “充值款”：用户为购买虚拟币/出售虚拟币而向tokok.com平台预充入的法币/虚拟币的款项。</p>
+				<p>1.7 “手续费”：使用者在tokok.com达成虚拟币交易而向tokok.com支付的交易服务费用。</p>
+				<div class="classATitle">二、用户注册</div>
+				<div class="classBTitle">2.1 注册资格</div>
+				<p>用户承诺：用户具有完全民事权利能力和行为能力，或虽不具有完全民事权利能力和行为能力,但点击同意按钮，通过身份验证程序，本网即视为经其法定代理人同意并由其法定代理人代理注册及应用tokok.com服务。</p>
+				<div class="classBTitle">2.2 注册目的</div>
+				<p>用户承诺：用户进行用户注册并非出于违反法律法规或破坏tokok.com虚拟币交易秩序的目的</p>
+				<div class="classBTitle">2.3 注册流程</div>
+				<p>2.3.1 用户使用邮箱快捷登录tokok.com并点击同意tokok.com服务条款后即视为使用者注册成功。</p>
+				<p>2.3.2 用户注册成功后进行虚拟币交易，应当提供本人的真实身份证件，进行实名认证。</p>
+				<div class="classATitle">三、使用者服务</div>
+				<div class="classBTitle">tokok.com为用户通过tokok.com进行虚拟币交易活动提供网络交易平台服务。</div>
+				<div class="classBTitle">tokok.com不作为买家或是卖家参与买卖虚拟币行为本身。</div>
+				<div class="classBTitle">3.1 服务内容</div>
+				<p>3.1.1 用户有权在tokok.com浏览虚拟币实时行情及交易信息、有权通过tokok.com提交虚拟币交易指令并完成虚拟币交易。</p>
+				<p>3.1.2 用户有权在tokok.com查看其tokok.com会员账号下的信息，有权应用tokok.com提供的功能进行操作。</p>
+				<p>3.1.3 使用者有权按照tokok.com发布的活动规则参与tokok.com组织的网站活动。</p>
+				<p>3.1.4 tokok.com承诺为使用者提供的其他服务。</p>
+				<div class="classBTitle">3.2 服务规则</div>
+				<div class="classBTitle">使用者承诺遵守下列tokok.com服务规则：</div>
+				<p>3.2.1 使用者应当遵守法律法规、规章、规范性文件及政策要求的规定，保证账户中所有资金和虚拟币来源的合法性，不得在tokok.com或利用tokok.com服务从事非法或其他损害tokok.com或第三方权益以及公共利益的活动，如发送或接收任何违法、违规、违反公序良俗、侵犯他人权益的信息，发送或接收传销材料或存在其他危害的信息或言论，未经tokok.com授权使用或伪造tokok.com电子邮件题头信息等。</p>
+				<p>3.2.2 用户应当遵守法律法规应当妥善使用和保管其tokok.com账号及密码、资金密码、和其注册时绑定的手机号码、以及手机接收的手机验证码的安全。使用者对使用其tokok.com账号和密码、资金密码、手机验证码进行的任何操作和后果承担全部责任。当使用者发现tokok.com账号、密码、或资金密码、验证码被未经其授权的第三方使用，或存在其他账号安全问题时，应立即有效通知tokok.com，要求tokok.com暂停该tokok.com账号的服务。tokok.com有权在合理时间内对用户的该等请求采取行动，但对tokok.com采取行动前用户已经遭受的损失不承担任何责任。使用者在未经tokok.com书面同意的情况下不得将tokok.com账号以赠与、借用、租用、转让或其他方式处分给他人。</p>
+				<p>3.2.3 用户应当遵守tokok.com实时发布和更新的使用者协议以及其他服务条款和操作规则。</p>
+				<div class="classATitle">四、虚拟币交易规则</div>
+				<div class="classBTitle">使用者承诺在其进入tokok.com交易，通过tokok.com与其他用户进行虚拟币交易的过程中良好遵守如下tokok.com虚拟币交易规则。</div>
+				<div class="classBTitle">4.1 浏览交易信息</div>
+				<p>使用者在tokok.com浏览虚拟币交易信息时，应当仔细阅读交易信息中包含的全部内容，包括但不限于虚拟币价格、委托量、手续费、买入或卖出方向，用户完全接受交易信息中包含的全部内容后方可点击按钮进行交易。</p>
+				<div class="classBTitle">4.2 提交委托</div>
+				<p>在浏览完交易信息确认无误之后用户可以提交交易委托。用户提交交易委托后，即用户授权tokok.com代理用户进行相应的交易撮合，tokok.com在有满足用户委托价格的交易时将会自动完成撮合交易而无需提前通知使用者。</p>
+				<div class="classBTitle">4.3 查看交易明细</div>
+				<p>用户可以通过管理中心的交易明细中查看相应的成交记录，确认自己的详情事务历史记录。</p>
+				<div class="classBTitle">4.4 撤销/修改委托</div>
+				<p>在委托未达成交易之前，用户有权随时撤销或修改委托。</p>
+				<div class="classATitle">五、用户的权利和义务</div>
+				<p>5.1 用户有权按照本协议约定接受tokok.com提供的虚拟币交易平台服务。</p>
+				<p>5.2 使用者有权随时终止使用tokok.com服务。</p>
+				<p>5.3 用户有权随时提取在tokok.com的资金余额，包括法币以及虚拟币，但需向tokok.com支付相应的提现手续费用。</p>
+				<p>5.4 用户对注册时提供的个人资料的真实性、有效性及安全性负责。</p>
+				<p>5.5 使用者在tokok.com进行虚拟币交易时不得恶意干扰虚拟币交易的正常进行、破坏交易秩序。</p>
+				<p>5.6 使用者不得以任何技术手段或其他方式干扰tokok.com的正常运行或干扰其他使用者对tokok.com服务的使用。</p>
+				<p>5.7 如用户因网上交易与其他用户产生诉讼的，不得通过司法以外的途径要求tokok.com提供相关数据。</p>
+				<p>5.8 使用者不得以虚构事实等方式恶意诋毁tokok.com的商誉。</p>
+				<p>5.9 用户有义务和责任妥善保管自身帐户和密码，因用户原因导致账号密码等交易信息泄漏引起的损失需自行承担。</p>
+				<div class="classATitle">六、tokok.com的权利和义务</div>
+				<p>6.1 如用户不具备本协议约定的注册资格，则tokok.com有权拒绝用户进行注册，对已注册的用户有权注销其tokok.com会员ID，tokok.com因此而遭受损失的有权向前述用户或其法定代理人主张赔偿。同时，tokok.com保留其他任何情况下决定是否接受使用者注册的权利。</p>
+				<p>6.2 tokok.com发现账户使用者并非账户初始注册人时，有权中止或终止该账户的使用。</p>
+				<p>6.3 tokok.com通过技术检测、人工抽检等检测方式合理怀疑用户提供的信息错误、不实、失效或不完整时，有权通知用户更正、更新信息或要求其提供证明材料，或中止、终止为其提供tokok.com服务。</p>
+				<p>6.4 tokok.com有权在发现tokok.com上显示的任何信息存在错误时，对信息予以更正。</p>
+				<p>6.5 tokok.com保留随时修改、中止或终止tokok.com服务的权利，tokok.com行使修改或中止服务的权利不需事先告知用户，tokok.com终止tokok.com一项或多项服务的，终止自tokok.com在网站上发布终止公告之日生效。</p>
+				<p>6.6 tokok.com应当采取必要的技术手段和管理措施保障tokok.com的正常运行，并提供必要、可靠的交易环境和交易服务，维护虚拟币交易秩序。用户同意tokok.com、第三方平台、关联银行等机构实时采取一切有效措施纠正交易错误，包括对用户资金帐户的事务历史记录等信息的查询，以及对账户资金的划转，而无需用户另行给予授权。</p>
+				<p>6.7 如用户连续一年未登录使用tokok.com，则tokok.com有权注销用户的tokok.com账号。账号注销后，tokok.com有权将相应的会员ID开放给其他用户注册使用。</p>
+				<p>6.8 tokok.com有权在本协议履行期间及本协议终止后保留用户的注册信息及用户应用tokok.com服务期间的全部交易信息，但不得非法使用该等信息。</p>
+				<p>6.9 tokok.com有权随时删除tokok.com网站内各类不符合国家法律或tokok.com网站规定的用户评价等内容信息，tokok.com行使该等权利不需提前通知用户或征得用户的同意。</p>
+				<div class="classATitle">七、特别声明</div>
+				<p>在法律允许的范围内，不论在何种情况下，tokok.com对由于信息网络设备维护、信息网络连接故障、计算机、通讯或其他系统的故障（提示：上述几项事实上并非不可抗力事件，如因TOKOK原因发生上述事实（如T网站故障等）导致用户产生损失，T网或会需承担相应责任。）、电力故障等原因，或罢工、劳动争议、暴乱、起义、骚乱、生产力或生产数据不足、火灾、洪水、风暴、爆炸、战争、政府行为、司法行政机关的命令、其他不可抗力、第三方的原因或tokok.com当前技术无法防止而造成的不能服务或延迟服务，以及使用者因此而遭受的损失不承担责任。</p>
+				<div class="classATitle">八、知识产权</div>
+				<p>8.1 tokok.com所包含的全部智力成果包括但不限于网站标志、数据库、网站设计、文字和图表、软件、照片、录像、音乐、声音及其前述组合，软件编译、相关源代码和软件 (包括小应用程序和脚本) 的知识产权权利均归tokok.com所有。用户不得为商业目的复制、更改、拷贝、发送或使用前述任何材料或内容。</p>
+				<p>8.2 tokok.com名称中包含的所有权利 (包括但不限于商誉和商标、标志) 均归Kindly Keep Network Technology Limited所有。</p>
+				<p>8.3 用户接受本协议即视为用户主动将其在tokok.com发表的任何形式的信息的著作权，包括但不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及应当由著作权人享有的其他可转让权利无偿独家转让给tokok.com所有，tokok.com有权利就任何主体侵权单独提起诉讼并获得全部赔偿。其效力及于用户在tokok.com发布的任何受知识产权法保护的作品内容，无论该内容形成于本协议签订前还是本协定签订后。</p>
+				<p>8.4 使用者在使用tokok.com服务过程中不得非法使用或处分tokok.com或他人的知识产权权利。使用者不得将已发表于tokok.com的信息以任何形式发布或授权其它网站（及媒体）使用。</p>
+				<div class="classATitle">九、客户服务</div>
+				<p>tokok.com建立专业的客服团队，并建立完善的客户服务制度，从技术、人员和制度上保障用户提问及投诉管道的畅通，为用户提供及时的疑难解答与投诉回馈。</p>
+				<div class="classATitle">十、协议的变更和终止</div>
+				<p>10.1 协议的变更：tokok.com有权随时对本协议内容或tokok.com发布的其他服务条款及操作规则的内容进行变更，变更时tokok.com将在tokok.com站内显著位置发布公告，变更自公告发布之时生效，如用户继续使用tokok.com提供的服务即视为使用者同意该等内容变更，如使用者不同意变更后的内容则使用者有权注销tokok.com账户、停止使用tokok.com服务。</p>
+				<div class="classBTitle">10.2 协议的终止</div>
+				<p>10.2.1 tokok.com有权依据本协议约定注销用户的tokok.com账号，本协议于账号注销之日终止。</p>
+				<p>10.2.2 tokok.com有权依据本协议约定终止全部tokok.com服务，本协议于tokok.com全部服务终止之日终止。</p>
+				<p>10.2.3 本协议终止后，用户无权要求tokok.com继续向其提供任何服务或履行任何其他义务，包括但不限于要求tokok.com为用户保留或向用户披露其原tokok.com账号中的任何信息，向用户或第三方转发任何其未曾阅读或发送过的信息等。</p>
+				<p>10.2.4 本协议的终止不影响守约方向违约方追究违约责任。</p>
+				<div class="classATitle">十一、反洗钱</div>
+				<p>11.1 tokok.com遵守和执行反洗钱的规定，对使用者进行身份识别、客户身份数据和事务历史记录保存制度，以及大额的和可疑交易报告的制度。</p>
+				<p>11.2 用户注册、挂失交易密码或者资金密码时，应当提供并上传身份证复印件，tokok.com对用户提供的身份证信息进行识别和比对。tokok.com有合理的理由怀疑用户使用虚假身份注册时，有权拒绝注册或者注销已经注册的账户。</p>
+				<p>11.3 tokok.com参照反洗钱的规定，保存有洗钱嫌疑的事务历史记录，在司法机构要求提供可疑交易的记录时，向司法机构提供。</p>
+				<p>11.4 tokok.com对用户身份信息以及可疑事务历史记录进行保存，依法协助、配合司法机关打击洗钱活动，依照法律法规的规定协助司法机关、海关、税务等部门查询、冻结和扣划客户存款。</p>
+				<div class="classATitle">十二、风险提示</div>
+				<div class="classBTitle">12.1 虚拟币交易有极高的风险。</div>
+				<p>12.1.1 虚拟币市场是全新的、未经确认的，而且可能不会增长或贬损。目前，虚拟币主要由投机者大量使用，零售和商业市场使用相对较少，因此虚拟币价格易产生波动，并进而对虚拟币投资产生不利影响。</p>
+				<p>12.1.2 虚拟币市场没有像股市那样的涨跌停限制，同时交易是24小时开放的。虚拟币由于筹码较少，价格易受到庄家控制，有可能出现一天价格涨几倍的情况，同时也可能出现一天内价格跌去一半的情况。</p>
+				<p>12.2 参与虚拟币交易，用户应当自行控制风险，评估虚拟币投资价值和投资风险，承担损失全部投资的经济风险。</p>
+				<p>12.3 因国家法律、法规和规范性档的制定或者修改，导致虚拟币的交易被暂停、或者禁止的，因此造成的经济损失全部由使用者自行承担。</p>
+				<div class="classATitle">十三、违约责任</div>
+				<p>13.1 tokok.com或用户违反本协议的约定即构成违约，违约方应当向守约方承担违约责任。</p>
+				<p>13.2 如因用户提供的信息不真实、不完整或不准确给tokok.com造成损失的，tokok.com有权要求用户对tokok.com进行损失的赔偿。</p>
+				<p>13.3 如因使用者违反法律法规规定或本协议约定，在tokok.com或利用tokok.com服务从事非法活动的，tokok.com有权立即终止继续对其提供tokok.com服务，注销其账号，并要求其赔偿由此给tokok.com造成的损失。</p>
+				<p>13.4 如用户以技术手段干扰tokok.com的运行或干扰其他用户对tokok.com使用的，tokok.com有权立即注销其tokok.com账号，并有权要求其赔偿由此给tokok.com造成的损失。</p>
+				<p>13.5 如使用者以虚构事实等方式恶意诋毁tokok.com的商誉，tokok.com有权要求用户向tokok.com公开道歉，赔偿其给tokok.com造成的损失，并有权终止对其提供tokok.com服务。</p>
+				<div class="classATitle">十四、争议解决</div>
+				<p>使用者与tokok.com因本协议的履行发生争议的应通过友好协商解决，协商解决不成的，任一方有权将争议提交仲裁委员会依据该会仲裁规则进行仲裁。</p>
+				<div class="classATitle">十五、生效和解释</div>
+				<p>15.1 本协议于用户点击tokok.com注册页面的同意并完成注册程序时生效，对tokok.com和用户均具有约束力。</p>
+				<p>15.2 本协议的最终解释权归tokok.com所有。</p>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="cont_aboutUs">
+			<div class="cont_aboutUsTop">
+				<div class="header" id="abouts">
+	<div class="header_left">
+		<div class="header_logo">
+			<img class="fl mar_r10" src="/emailSub/static/img/logo.png">
+			<span>TOKEN 66</span>
+		</div>
+	</div>
+	<div class="header_right">
+		<div class="lang active">
+			<p class="language" id="language">language</p>
+			<div class="JYrecords" >
+					<div class="one" onclick="setCookie('chinese')">
+						<a id="Chinese" data-click="scroll-top">中文</a>
+						<em></em>
+					</div>
+					<div class="two" onclick="setCookie('english')">
+						<a id="english" data-click="scroll-top">English</a>
+					</div>
+			</div>
+			
+		</div>
+		<div class="lang">
+			<p class="language" id="serve">service agreement</p>
+		</div>
+		<div class="lang">
+			<p class="language" ><a id="shouye" onclick="window.location.href='/emailSub/email/getHomePage'">home page</a></p>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="aboutUsAdvantage">
+			<div class="cont_aboutUsAdvantage">
+				<div class="cont_aboutUsAdvantageCont">
+					<div class="cont_aboutUsAdvantageTitle" id="youshi">Advantages of TOKOK:</div>
+					<ul class="clearfix">
+						<li class="one">
+							<img src="/emailSub/static/img/about1.png">
+							<p id="anquan">Security & Stability</p>
+							<p id="fenbushi">Distributed network technology</p>
+						</li>
+						<li class="two">
+							<img src="/emailSub/static/img/about2.png">
+							<p id="zhicheng">Superior Technology</p>
+							<p id="baiwan">Capable of processing up to 1,000,000 transactions per second</p>
+						</li>
+						<li class="three">
+							<img src="/emailSub/static/img/about3.png">
+							<p id="duoyuyan">Multilingual</p>
+							<p id="banben">Provide the world's dominant language version.</p>
+						</li>
+						<li class="four">
+							<img src="/emailSub/static/img/about4.png">
+							<p id="duobizhong">multi-currency</p>
+							<p id="jiqun">BTC、ETH、USDT etc</p>
+						</li>
+						<li class="five">
+							<img src="/emailSub/static/img/about5.png">
+							<p id="bizhong">Premium Currency</p>
+							<p id="pingtai"> Only high-quality and utility tokens will be listed on TOKOK</p>
+						</li>
+					</ul>
+					<div class="about_mePostion">
+						<div class="about_mePostionTitke" id="about">About Us</div>
+						<p id="jianjieyi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK(<a href='https://www.tokok.com'>www.tokok.com</a>)(referred as “T NET”),<a href="http://www.bvifsc.vg/en-gb/divisions/registryofcorporateaffairs/certificateverification.aspx??qrCode=C4C8FC76B4">Kindly Keep Network Technology Limited</a> (Registration No. 1967379 ), is a global professional Crypto Assets Exchange</p>
+						<p id="jianjieer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK offer their clients Crypto assets trading services with professional management teams from around the world, powerful technology-supported trading systems, secure and strict funding management and caring services to build a world-class Crypto assets trading platform.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="aboutCallMe">
+			<div class="cont_aboutCallMe">
+				<div class="cont_aboutCallMeCont">
+					<div class="cont_aboutCallMeTitle" id="lianxi">Contact us</div>
+					<ul class="clearfix"> 
+						<li class="one">
+							<p id="gongsi">Corporate</p>
+							<p>Kindly Keep Network Technology Limited</p>
+						</li>
+						<li class="two">
+							<p id="bianhao">Registration No</p>
+							<p>1967379</p>
+						</li>
+						<li class="three">
+							<p id="kefu">For Service</p>
+							<p>service@tokok.com</p>
+						</li>
+						<li class="four">
+							<p id="shangwu">For Business</p>
+							<p>business@tokok.com</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<!--<div class="hr_back"></div>
+			<div class="aboutCallMe">
+				<div class="about_foot">
+					<div class="about_footCont clearfix">
+					<div class="about_footLeft">
+						<div class="clearfix">
+							<span>关于我们</span>
+							<span>服务协议</span>
+							<span>隐私声明</span>
+							<span>费率标准</span>
+							<span>联系我们</span>
+							<span>新手指引</span>
+							<span>币种资料</span>
+							<span>常见问题</span>
+							<span>法律文件</span>
+						</div>
+						<p>© 2018 Token66.com All Rights Reserve</p>
+					</div>
+					<div class="about_footRig">
+						<div class="about_footImg">
+							<img src="img/aboutQRcode.png">
+							<p>微信公众号</p>
+						</div>
+						<div class="about_footImg">
+							<img src="img/aboutQRcode.png">
+							<p>QQ联系</p>
+						</div>
+					</div>
+					<div class="about_footRisk">
+						<div class="about_footRiskTitle">风险提示</div>
+						<p></p>
+					</div>
+				</div>
+				</div>
+			</div>-->
+		</div>
+		<script type="text/javascript" src="/emailSub/static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/emailSub/static/js/video.js"></script>
+		<script type="text/javascript" src="/emailSub/static/js/index.js"></script>
+		<script>
+			var winHeight = $(window).height();
+			var height = $(".aboutUsAdvantage").height() + $(".aboutCallMe").height()
+			$(".cont_aboutUsTop").height(winHeight - height )
+			$(".service_agreementCont").height(winHeight - 200 - 80 - 96)
+			$("#header").load("views/about_header.html")
+			function closeCont(data){
+				$("."+data).hide()
+			}
+			$(".header_right .lang.active").click(function() {
+	            $(this).children(".JYrecords").slideToggle();
+	       })
+	       var cookie = window.localStorage.getItem("country");
+				if('chinese' == cookie){
+					$("#language").html("语言");
+					$("#serve").html("服务协议");
+					$("#about a").text("关于我们");
+					$("#shouye").text("首页");
+					$("#youshi").text("我们的优势");
+					$("#fenbushi").text("分布式网络技术");
+					$("#anquan").text("安全稳定");
+					$("#zhicheng").text("技术支撑");
+					$("#baiwan").text("每秒高达百万的交易支持");
+					$("#duoyuyan").text("多语言");
+					$("#banben").text("提供世界主流语言版本");
+					$("#duobizhong").text("多币种");
+					$("#jiqun").text("BTC、ETH、USDT等交易集群");
+					$("#bizhong").text("优质币种");
+					$("#pingtai").text("平台上线的均为优质的基础和应用层面币种");
+					$("#about").text("关于我们");
+					$("#lianxi").text("联系我们");
+					$("#gongsi").text("公司名称");
+					$("#bianhao").text("注册编号");
+					$("#kefu").text("客服邮箱");
+					$("#sahngwu").text("商务邮箱");
+					$("#jianjieyi").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK（<a href='https://www.tokok.com'>www.tokok.com</a>），简称T网，是隶属于英属维京群岛<a href='http://www.bvifsc.vg/en-gb/divisions/registryofcorporateaffairs/certificateverification.aspx??qrCode=C4C8FC76B4'>Kindly Keep Network Technology Limited</a>（注册编号：1967379）旗下面向全球服务的专业加密资产交易平台。");
+					$("#jianjieer").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK以来自世界各地的专业的管理团队、强大技术支撑的交易系统、安全严格的资金管理、贴心的服务为用户提供加密资产交易服务，打造世界级的加密资产交易平台。");
+				}else{
+					$("#language").html("language");
+					$("#serve").html("service agreement");
+					$("#about a").text("About Us");
+					$("#shouye").text("home page");
+					$("#youshi").text("Advantages of TOKOK:");
+					$("#fenbushi").text("Distributed network technology");
+					$("#anquan").text("Security & Stability");
+					$("#zhicheng").text("Superior Technology");
+					$("#baiwan").text("Capable of processing up to 1,000,000 transactions per second");
+					$("#duoyuyan").text("multilingual");
+					$("#banben").text("Provide the world's dominant language version.");
+					$("#duobizhong").text("multi-currency");
+					$("#jiqun").text("BTC、ETH、USDT etc");
+					$("#bizhong").text("Premium Currency");
+					$("#pingtai").text(" Only high-quality and utility tokens will be listed on TOKOK");
+					$("#about").text("About Us");
+					$("#lianxi").text("Contact us");
+					$("#gongsi").text("Corporate");
+					$("#bianhao").text("Registration No");
+					$("#kefu").text("For Service");
+					$("#shangwu").text("For Business");
+					$("#jianjieyi").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK(<a href='https://www.tokok.com'>www.tokok.com</a>)(referred as “T NET”), <a href='http://www.bvifsc.vg/en-gb/divisions/registryofcorporateaffairs/certificateverification.aspx??qrCode=C4C8FC76B4'>Kindly Keep Network Technology Limited</a> (Registration No. 1967379 ), is a global professional Crypto Assets Exchange");
+					$("#jianjieer").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK offer their clients Crypto assets trading services with professional management teams from around the world, powerful technology-supported trading systems, secure and strict funding management and caring services to build a world-class Crypto assets trading platform.");
+				}
+		 	function closeCont(data){
+				$("."+data).hide()
+			}
+			$("#serve").click(function(){
+				cookie = window.localStorage.getItem("country");
+				if(cookie == "english" || cookie == null){
+					$(".langEnglish").show()
+				}else{
+					$(".langChina").show()
+				}
+			})
+			$(".header_right .lang.active .JYrecords div").hover(function() {
+		            $(this).addClass("active")
+		        }, function() {
+		            $(this).removeClass("active")
+		        });
+			var cookie = window.localStorage.getItem("country");
+			$("#serve").click(function(){
+				cookie = window.localStorage.getItem("country");
+				if(cookie == "english" || cookie == null){
+					$(".langEnglish").show()
+				}else{
+					$(".langChina").show()
+				}
+			})
+			function setCookie(name){ 
+			window.localStorage.setItem("country",name);
+			//	document.cookie =  "country=" +name;
+			//	location.reload();
+				if('chinese' == name){
+					$("#language").html("语言");
+					$("#serve").html("服务协议");
+					$("#about a").text("关于我们");
+					$("#shouye").text("首页");
+					$("#youshi").text("我们的优势");
+					$("#fenbushi").text("分布式网络技术");
+					$("#anquan").text("安全稳定");
+					$("#zhicheng").text("技术支撑");
+					$("#baiwan").text("每秒高达百万的交易支持");
+					$("#duoyuyan").text("多语言");
+					$("#banben").text("提供世界主流语言版本");
+					$("#duobizhong").text("多币种");
+					$("#jiqun").text("BTC、ETH、USDT等交易集群");
+					$("#bizhong").text("优质币种");
+					$("#pingtai").text("平台上线的均为优质的基础和应用层面币种");
+					$("#about").text("关于我们");
+					$("#lianxi").text("联系我们");
+					$("#gongsi").text("公司名称");
+					$("#bianhao").text("注册编号");
+					$("#kefu").text("客服邮箱");
+					$("#sahngwu").text("商务邮箱");
+					$("#jianjieyi").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK（<a href='https://www.tokok.com'>www.tokok.com</a>），简称T网，是隶属于英属维京群岛<a href='http://www.bvifsc.vg/en-gb/divisions/registryofcorporateaffairs/certificateverification.aspx??qrCode=C4C8FC76B4'>Kindly Keep Network Technology Limited</a>（注册编号：1967379）旗下面向全球服务的专业加密资产交易平台。");
+					$("#jianjieer").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK以来自世界各地的专业的管理团队、强大技术支撑的交易系统、安全严格的资金管理、贴心的服务为用户提供加密资产交易服务，打造世界级的加密资产交易平台。");
+				}else{
+					$("#language").html("language");
+					$("#serve").html("service agreement");
+					$("#about a").text("About Us");
+					$("#shouye").text("home page");
+					$("#youshi").text("Advantages of TOKOK:");
+					$("#fenbushi").text("Distributed network technology");
+					$("#anquan").text("Security & Stability");
+					$("#zhicheng").text("Superior Technology");
+					$("#baiwan").text("Capable of processing up to 1,000,000 transactions per second");
+					$("#duoyuyan").text("multilingual");
+					$("#banben").text("Provide the world's dominant language version.");
+					$("#duobizhong").text("multi-currency");
+					$("#jiqun").text("BTC、ETH、USDT etc");
+					$("#bizhong").text("Premium Currency");
+					$("#pingtai").text(" Only high-quality and utility tokens will be listed on TOKOK");
+					$("#about").text("About Us");
+					$("#lianxi").text("Contact us");
+					$("#gongsi").text("Corporate");
+					$("#bianhao").text("Registration No");
+					$("#kefu").text("For Service");
+					$("#shangwu").text("For Business");
+					$("#jianjieyi").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK(<a href='https://www.tokok.com'>www.tokok.com</a>)(referred as “T NET”), <a href='http://www.bvifsc.vg/en-gb/divisions/registryofcorporateaffairs/certificateverification.aspx??qrCode=C4C8FC76B4'>Kindly Keep Network Technology Limited</a> (Registration No. 1967379 ), is a global professional Crypto Assets Exchange");
+					$("#jianjieer").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKOK offer their clients Crypto assets trading services with professional management teams from around the world, powerful technology-supported trading systems, secure and strict funding management and caring services to build a world-class Crypto assets trading platform.");
+				}
+			} 
+			
+		</script>
+	</body>
+
+</html>

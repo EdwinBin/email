@@ -1,0 +1,76 @@
+.account_assets{
+	background: #f7f7f8;
+	padding: 20px 50px;
+}
+.account_assets p.an{
+	height: 24px;
+	line-height: 24px;
+	color: #666666;
+}
+.account_assets p.active{
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	margin-bottom: 15px;
+	color: #999;
+}
+.account_assets .account_assetsInfo{
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.account_assets .account_assetsInfo em{
+	font-size: 30px;
+	color: #EF7843;
+}
+.account_assets .account_assetsInfo span{
+	color: #999;
+	font-size: 30px;
+}
+.account_assetsSearch .top_up_ListSearch input{
+	background: #f7f7f8;
+}
+.account_assetsSearch .el-checkbox__input.is-checked .el-checkbox__inner{
+	border-color: #999;
+}
+.account_assetsSearch .el-checkbox__inner:after{
+	border-color: #999;
+}
+.account_assetsSearch .hide_account{
+	color: #999;
+	font-size: 12px;
+}
+.account_assetsSearch .hideSmall i{
+	color: #ef7843;
+	font-size: 13px;
+}
+
+
+.account_name img{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.account_operation span{
+	width: 44px;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	color: #666666;
+	font-size: 12px;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 7px;
+	border: 1px solid #E5E5E5;
+	border-radius: 3px;
+}
+.account_operation span:hover{
+	background: #EF7843;
+	color: #fff;
+}
+#account_centerTable thead tr th:first-child,#account_centerTable tbody tr td:first-child{
+	padding-left: 20px;
+}
+#account_centerTable thead tr th:last-child,#account_centerTable tbody tr td:last-child{
+	padding-right: 20px;
+}
